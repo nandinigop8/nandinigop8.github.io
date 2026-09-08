@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: #fff;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+    font-size: 14px;
+}
+
+nav a:hover,
+.contact-links a:hover {
+    opacity: 0.55;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.hero {
+    padding: 130px 0 150px;
+    max-width: 850px;
+}
+
+.eyebrow,
+.section-label,
+.project-number {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    font-weight: 700;
+}
+
+.eyebrow {
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: clamp(56px, 8vw, 96px);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    max-width: 560px;
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 34px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.button {
+    padding: 12px 20px;
+    border: 1px solid #111;
+    font-size: 14px;
+}
+
+.button.primary {
+    background: #111;
+    color: #fff;
+}
+
+.button.secondary {
+    background: #fff;
+}
+
+.work-section,
+.about-section,
+.contact-section {
+    padding: 100px 0;
+    border-top: 1px solid #ddd;
+}
+
+.featured-project {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+    gap: 60px;
+    margin-top: 45px;
+    align-items: center;
+}
+
+.project-image {
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    display: block;
+}
+
+.project-info h2 {
+    font-size: 54px;
+    letter-spacing: -0.03em;
+    margin: 10px 0 8px;
+}
+
+.project-type {
+    color: #555;
+    margin-bottom: 22px;
+}
+
+.project-description {
+    max-width: 420px;
+    color: #555;
+    margin-bottom: 22px;
+}
+
+.skills {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 26px;
+}
+
+.view-project {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 45px;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+.about-content p {
+    color: #555;
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.contact-section h2 {
+    font-size: 64px;
+    letter-spacing: -0.04em;
+    margin: 30px 0;
+}
+
+.contact-links {
+    display: flex;
+    gap: 28px;
+    font-size: 15px;
+}
+
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 32px 50px;
+    color: #888;
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+
+    .featured-project,
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero {
+        padding: 90px 0 100px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .project-info h2 {
+        font-size: 42px;
+    }
+
+    .contact-section h2 {
+        font-size: 48px;
+    }
+}
