@@ -4,6 +4,7 @@
     --light-blue: #EEF4FF;
     --pink: #F3A6C6;
     --light-pink: #FFF1F6;
+    --dark-pink: #A10D6F;
     --cream: #FCFBF9;
     --gray: #667085;
     --light-gray: #E5E7EB;
@@ -145,15 +146,15 @@ main {
 
 .button {
     padding: 12px 22px;
-    border: 1px solid var(--navy);
+    border: 1px solid var(--dark-pink);
     font-size: 14px;
     border-radius: 999px;
     transition: all 0.2s ease;
 }
 
 .button.primary {
-    background: var(--blue);
-    border-color: var(--blue);
+    background: var(--dark-pink);
+    border-color: var(--dark-pink);
     color: white;
 }
 
@@ -164,7 +165,7 @@ main {
 
 .button.secondary {
     background: transparent;
-    color: var(--navy);
+    color: var(--dark-pink);
 }
 
 .button.secondary:hover {
@@ -179,7 +180,7 @@ main {
 .about-section,
 .contact-section {
     padding: 100px 0;
-    border-top: 1px solid var(--light-gray);
+    border-top: 1px solid var(--light-pink);
 }
 
 /* ---------- PROJECT ---------- */
