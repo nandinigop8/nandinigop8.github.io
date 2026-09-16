@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nandini Gopalakrishnan | CAD Portfolio</title>
+    <title>Nandini Gopalakrishnan | Engineering Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +16,7 @@
 <!-- NAVIGATION -->
 <header class="navbar">
 
-    <a href="#" class="logo">CAD PORTFOLIO</a>
+    <a href="#" class="logo">ENGINEERING PORTFOLIO</a>
 
     <nav>
         <a href="#work">Projects</a>
@@ -42,12 +42,13 @@
         </h1>
 
         <h2 class="portfolio-title">
-            CAD Portfolio
+            Engineering Portfolio
         </h2>
 
         <p class="hero-text">
-            Exploring medical device design, product development,
-            and engineering through CAD.
+            I'm an engineering student who enjoys turning class projects
+            into working prototypes, and CAD is where I keep exploring
+            the mechanical side on my own.
         </p>
 
         <div class="buttons">
@@ -62,55 +63,88 @@
     <!-- PROJECTS -->
     <section id="work" class="work-section">
 
-        <div class="section-label">
-            SELECTED WORK
+        <div class="work-header">
+            <div>
+                <div class="section-label">
+                    SELECTED WORK
+                </div>
+            </div>
+
+            <div class="tab-list" role="tablist">
+                <button
+                    class="tab-button active"
+                    role="tab"
+                    aria-selected="true"
+                    data-tab="engineering"
+                >
+                    Engineering Projects
+                </button>
+                <button
+                    class="tab-button"
+                    role="tab"
+                    aria-selected="false"
+                    data-tab="cad"
+                >
+                    CAD Projects
+                </button>
+            </div>
         </div>
 
 
-        <!-- MICROPIPETTE -->
-        <div class="featured-project">
+        <!-- ENGINEERING PROJECTS TAB -->
+        <div class="tab-panel active" data-panel="engineering">
 
-            <a
-                class="project-image"
-                href="projects/micropipette.html"
-            >
-                <img
-                    src="images/micropipette2.png"
-                    alt="Micropipette CAD model"
-                >
-            </a>
+            <p class="tab-intro">
+                Full builds from coursework — circuits, code, and
+                mechanical design combined into working devices.
+            </p>
 
+            <div class="project-grid">
 
-            <div class="project-info">
+                <!-- NASAL CANNULA DEVICE -->
+                <a class="project-card" href="projects/nasal-cannula.html">
 
-                <p class="project-number">
-                    01
-                </p>
+                    <div class="card-image">
+                        <img
+                            src="images/nasal-cannula-system.png"
+                            alt="Nasal cannula dislodgement detection prototype on infant manikin"
+                        >
+                    </div>
 
-                <h2>
-                    Micropipette
-                </h2>
+                    <div class="card-body">
+                        <p class="card-tag">INTRO TO ENGINEERING · TEAM PROJECT</p>
+                        <h3>Nasal Cannula Dislodgement Detector</h3>
+                        <p>
+                            A wearable alert system that tells nurses in
+                            low-resource neonatal wards when an infant's
+                            oxygen cannula has slipped out of place.
+                        </p>
+                        <span class="card-link">View Project →</span>
+                    </div>
 
-                <p class="project-type">
-                    Laboratory Instrument Design
-                </p>
+                </a>
 
-                <p class="project-description">
-                    Designed and modeled a multi-component micropipette
-                    featuring a sliding plunger, threaded connecting collar,
-                    and functional tip-ejection mechanism.
-                </p>
+                <!-- PULSE OXIMETER (ARDUINO) -->
+                <a class="project-card" href="projects/pulse-oximeter-arduino.html">
 
-                <p class="skills">
-                    PARAMETRIC CAD · ASSEMBLIES · JOINTS · LOFTS ·
-                    PATTERNS · THREADS
-                </p>
+                    <div class="card-image">
+                        <img
+                            src="images/pulse-ox-arduino-diagram.svg"
+                            alt="Arduino pulse oximeter signal chain diagram"
+                        >
+                    </div>
 
-                <a
-                    class="project-button"
-                    href="projects/micropipette.html"
-                >
-                    View Project →
+                    <div class="card-body">
+                        <p class="card-tag">COMPUTING FOR ENGINEERS · TEAM PROJECT</p>
+                        <h3>Pulse Oximeter Simulation</h3>
+                        <p>
+                            An Arduino-based pulse oximeter built from an
+                            LED sensor and custom signal-processing code
+                            that outputs live BPM and SpO2 readings.
+                        </p>
+                        <span class="card-link">View Project →</span>
+                    </div>
+
                 </a>
 
             </div>
@@ -118,104 +152,89 @@
         </div>
 
 
-        <!-- PULSE OXIMETER -->
-        <div class="featured-project second-project">
+        <!-- CAD PROJECTS TAB -->
+        <div class="tab-panel" data-panel="cad">
 
-            <a
-                class="project-image pink-project-image"
-                href="projects/pulse-oximeter.html"
-            >
-                <img
-                    src="images/pulseox-open.png"
-                    alt="Pulse oximeter CAD model"
-                >
-            </a>
+            <p class="tab-intro">
+                Independent CAD studies I take on outside of class,
+                usually sparked by something I built or noticed
+                elsewhere — including the two designs below.
+            </p>
 
+            <div class="project-grid">
 
-            <div class="project-info">
+                <!-- MICROPIPETTE -->
+                <a class="project-card" href="projects/micropipette.html">
 
-                <p class="project-number">
-                    02
-                </p>
+                    <div class="card-image">
+                        <img
+                            src="images/micropipette2.png"
+                            alt="Micropipette CAD model"
+                        >
+                    </div>
 
-                <h2>
-                    Pulse Oximeter
-                </h2>
+                    <div class="card-body">
+                        <p class="card-tag tag-cad">LABORATORY INSTRUMENT</p>
+                        <h3>Micropipette</h3>
+                        <p>
+                            A multi-component micropipette with a sliding
+                            plunger, threaded collar, and tip-ejection
+                            mechanism.
+                        </p>
+                        <span class="card-link">View Project →</span>
+                    </div>
 
-                <p class="project-type">
-                    Medical Device Design
-                </p>
+                </a>
 
-                <p class="project-description">
-                    Independently designed and modeled a compact fingertip
-                    pulse oximeter, focusing on ergonomic geometry,
-                    component interaction, and a functional hinged assembly.
-                </p>
+                <!-- PULSE OXIMETER HOUSING -->
+                <a class="project-card" href="projects/pulse-oximeter.html">
 
-                <p class="skills">
-                    PARAMETRIC CAD · DRAFTS · SPLIT BODY ·
-                    ASSEMBLIES · JOINTS · PRODUCT DESIGN
-                </p>
+                    <div class="card-image">
+                        <img
+                            src="images/pulseox-open.png"
+                            alt="Pulse oximeter CAD model"
+                        >
+                    </div>
 
-                <a
-                    class="project-button pink-button"
-                    href="projects/pulse-oximeter.html"
-                >
-                    View Project →
+                    <div class="card-body">
+                        <p class="card-tag tag-cad">MEDICAL DEVICE DESIGN</p>
+                        <h3>Pulse Oximeter Housing</h3>
+                        <p>
+                            A compact fingertip housing modeled after my
+                            Arduino pulse oximeter build, with a
+                            functional hinged assembly.
+                        </p>
+                        <span class="card-link">View Project →</span>
+                    </div>
+
+                </a>
+
+                <!-- SYRINGE -->
+                <a class="project-card" href="projects/syringe.html">
+
+                    <div class="card-image">
+                        <img
+                            src="images/syringe-front.png"
+                            alt="Syringe CAD model"
+                        >
+                    </div>
+
+                    <div class="card-body">
+                        <p class="card-tag tag-cad">MEDICAL DEVICE CAD STUDY</p>
+                        <h3>Syringe</h3>
+                        <p>
+                            A syringe assembly modeled to build proficiency
+                            with parametric CAD and precision geometry.
+                        </p>
+                        <span class="card-link">View Project →</span>
+                    </div>
+
                 </a>
 
             </div>
 
         </div>
-<!-- SYRINGE -->
-<div class="featured-project third-project">
 
-    <a
-        class="project-image"
-        href="projects/syringe.html"
-    >
-        <img
-            src="images/syringe-front.png"
-            alt="Syringe CAD model"
-        >
-    </a>
-
-
-    <div class="project-info">
-
-        <p class="project-number">
-            03
-        </p>
-
-        <h2>
-            Syringe
-        </h2>
-
-        <p class="project-type">
-            Medical Device CAD Study
-        </p>
-
-        <p class="project-description">
-            Modeled a medical syringe assembly to develop proficiency
-            with parametric CAD, precision geometry, and multi-component
-            assemblies.
-        </p>
-
-        <p class="skills">
-            PARAMETRIC CAD · REVOLVES · ASSEMBLIES ·
-            SLIDING MOTION · FILlets · CHAMFERS
-        </p>
-
-        <a
-            class="project-button"
-            href="projects/syringe.html"
-        >
-            View Project →
-        </a>
-
-    </div>
-
-</div>
     </section>
 
 
@@ -230,13 +249,23 @@
         <div class="about-content">
 
             <h2>
-                I enjoy turning ideas into
-                tangible designs.
+                I like to turn ideas into
+                things I can build.
             </h2>
 
 
             <p>
-                I’m a Biomedical Engineering student at Duke University interested in designing practical solutions to healthcare challenges. Through coursework and hands-on projects, I have developed experience with CAD, rapid prototyping, electronics, 3D printing, and iterative design. This CAD portfolio showcases my experience developing and refining 3D designs for healthcare-focused engineering projects.
+                I'm a Biomedical Engineering student at Duke University
+                interested in designing practical solutions to healthcare
+                challenges. My coursework projects combine circuits, code,
+                and mechanical design into working devices, while my CAD
+                work is where I explore the mechanical side further on my
+                own.
+            </p>
+
+            <p>
+                I have experience with CAD, rapid prototyping, embedded
+                electronics, 3D printing, and iterative design.
             </p>
 
         </div>
@@ -292,10 +321,30 @@
 </footer>
 
 
-</body>
+<script>
+    const tabButtons = document.querySelectorAll(".tab-button");
+    const tabPanels = document.querySelectorAll(".tab-panel");
 
-</html>
+    tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const target = button.getAttribute("data-tab");
 
+            tabButtons.forEach((b) => {
+                b.classList.remove("active");
+                b.setAttribute("aria-selected", "false");
+            });
+            button.classList.add("active");
+            button.setAttribute("aria-selected", "true");
+
+            tabPanels.forEach((panel) => {
+                panel.classList.toggle(
+                    "active",
+                    panel.getAttribute("data-panel") === target
+                );
+            });
+        });
+    });
+</script>
 
 </body>
 
