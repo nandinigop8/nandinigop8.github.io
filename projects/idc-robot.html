@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Autonomous Robot Control &amp; Communication | Nandini Gopalakrishnan</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="../index.html" class="logo">ENGINEERING PORTFOLIO</a>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="#overview">Overview</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+    <section class="project-hero">
+
+        <p class="eyebrow">
+            ENGINEERING PROJECT · ECE 110L INTEGRATED DESIGN CHALLENGE
+        </p>
+
+        <h1>
+            Autonomous Robot<br>Control &amp; Communication
+        </h1>
+
+        <p class="project-subtitle">
+            "Jurassic Duke" — Line-Following, Sensing &amp; Wireless Coordination
+        </p>
+
+        <div class="project-meta-row">
+            <span class="meta-pill">Team Project</span>
+            <span class="meta-pill">Pratt School of Engineering, Duke University</span>
+            <span class="meta-pill">Fall 2026</span>
+        </div>
+
+        <img
+            class="project-hero-image"
+            src="../images/idc-robot-cornelius.jpg"
+            alt="Cornelius, the ECE 110 robot, with its QTI sensors, ultrasonic sensor, and XBee module mounted on top"
+        >
+
+    </section>
+
+
+    <!-- OVERVIEW -->
+    <section id="overview" class="project-section">
+
+        <div class="section-label">
+            OVERVIEW
+        </div>
+
+        <div class="project-two-column">
+
+            <div>
+                <h2>
+                    Programming a robot to navigate, sense, and
+                    communicate on its own.
+                </h2>
+            </div>
+
+            <div>
+                <p>
+                    For ECE 110L's Integrated Design Challenge — a
+                    dinosaur-themed course competition called "Jurassic
+                    Duke" — my partner and I programmed an Arduino-based
+                    robot, Cornelius, to autonomously follow a line,
+                    detect objects at checkpoints along the way, and
+                    wirelessly coordinate with four other robots to
+                    choose a safe route off of a simulated, dinosaur-
+                    overrun campus.
+                </p>
+
+                <p>
+                    Each robot was responsible for one sensor and one
+                    communication task. Ours used an ultrasonic (ping)
+                    sensor to detect objects at each checkpoint, while
+                    onboard and external RGB LEDs signaled what the robot
+                    was doing in real time — sensing, transmitting, or
+                    receiving data over XBee. Once every robot's readings
+                    were shared, each bot calculated and displayed the
+                    group's full dataset on an LCD and performed a
+                    synchronized celebration based on the selected route.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMPONENT BREAKDOWN -->
+    <section class="project-section">
+
+        <div class="section-label">
+            COMPONENT BREAKDOWN
+        </div>
+
+        <div class="feature-grid">
+
+            <div>
+                <h3>Line Following &amp; Navigation</h3>
+                <p>
+                    Co-programmed the robot in C++ using QTI sensors to
+                    follow the track and detect checkpoints, adjusting
+                    servo-driven movement in response.
+                </p>
+            </div>
+
+            <div>
+                <h3>Object Sensing</h3>
+                <p>
+                    Used an ultrasonic sensor to detect objects at each
+                    checkpoint, flashing an external RGB LED to indicate
+                    a positive or negative reading.
+                </p>
+            </div>
+
+            <div>
+                <h3>Wireless Communication &amp; Display</h3>
+                <p>
+                    Co-developed route-selection logic combining local
+                    readings with XBee data from four other robots,
+                    displaying the full dataset on an onboard LCD.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="project-section">
+
+        <div class="section-label">
+            SKILLS USED
+        </div>
+
+        <div class="skill-list">
+            <span>Arduino</span>
+            <span>C++</span>
+            <span>QTI Sensors</span>
+            <span>Ultrasonic Sensing</span>
+            <span>Servo Control</span>
+            <span>XBee Wireless Communication</span>
+            <span>LCD Programming</span>
+            <span>RGB LED Signaling</span>
+            <span>Systems Integration</span>
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+    <section id="gallery" class="project-section">
+
+        <div class="section-label">
+            GALLERY
+        </div>
+
+        <div class="project-gallery gallery-pair">
+
+            <figure>
+                <img
+                    src="../images/idc-robot-cornelius.jpg"
+                    alt="Cornelius, the robot, with QTI sensors, ultrasonic sensor, and XBee module mounted on its chassis"
+                >
+                <figcaption>Cornelius, with its QTI sensors, ultrasonic sensor, and XBee module</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="../images/idc-robot-lcd.jpg"
+                    alt="Front view of the robot showing its onboard LCD and XBee SIP adapter"
+                >
+                <figcaption>Onboard LCD and XBee adapter, used to display the full team's sensor data</figcaption>
+            </figure>
+
+        </div>
+
+    </section>
+
+
+    <!-- BACK LINK -->
+    <section class="project-back">
+        <a href="../index.html">
+            ← Back to portfolio
+        </a>
+    </section>
+
+</main>
+
+
+<footer>
+    © 2026 Nandini Gopalakrishnan
+</footer>
+
+</body>
+</html>
